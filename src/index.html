@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation</title>
+    <link rel="stylesheet" href="./CSS/output.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+        <div class="w-full h-16 bg-white relative lg:hidden  shadow-lg">
+            <img class="menu-hamburger absolute top-5 left-8" src="./ressources/menu.png" width="30px" height="30px" alt="menu burger">
+            <a class="shrink-0" href="#">
+                <img class="block lg:hidden absolute top-3 right-8" src="./ressources/logo_navbar.png" width="40px" height="40px" alt="Logo de la formation">
+            </a>
+        </div>
+        <nav class="hidden absolute nav w-1/2 lg:w-full h-screen lg:h-20 lg:flex lg:items-center lg:justify-between bg-white px-5 pt-8 lg:pt-0 lg:px-32 shadow-2xl lg:shadow-lg">
+            <div class="lg:w-1/4 lg:flex lg:justify-between">
+                <a class="shrink-0" href="#">
+                    <img class="hidden lg:block" src="./ressources/logo_navbar.png" width="60px" height="60px" alt="Logo de la formation">
+                </a>
+                <ul class="lg:flex lg:items-center text-gray-700 text-xl">
+                    <a href="#formation" class="lg:hover:text-red-400 lg:transition-colors">
+                        <li class="mt-4 lg:mt-0">Formation</li>
+                    </a>
+                    <span class="lg:before:inline-block before:hidden before:w-0.5 before:h-10 before:bg-gray-400 before:mx-5"></span>
+                    <a href="#cursus" class="lg:hover:text-red-400 lg:transition-colors">
+                        <li class="mt-4 lg:mt-0">
+                            Cursus
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <button class="lg:border-2 mt-8 lg:mt-0 lg:border-red-300 text-gray-700 lg:text-red-400 lg:hover:text-white lg:hover:bg-red-300 font-extrabold lg:rounded lg:px-4 lg:py-2.5 lg:transition-colors">
+                <a href="./contact.html">Nous contacter</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main part -->
+    <main class="main">
+
+        <!-- First section -->
+        <section class="lg:px-32 lg:h-screen bg-yellow-100 py-8 lg:pt-20 lg:flex lg:items-center px-7">
+            <div class="lg:w-2/5 w-full lg:mr-40">
+                <h2 class="lg:text-5xl text-2xl font-bold lg:text-red-400 text-red-500 text-center md:text-left lg:text-left">Explosez vos <span class="lg:block text-red-500">compétences...</span></h2>
+                <p class="lg:text-xl md:text-lg lg:pt-7 pt-5 text-gray-700 tracking-tighter lg:tracking-normal w-full">Améliorez vos compétences  en développement web grâce à la formation <span class="font-bold text-red-500">DEV</span>, centrée sur le développement web et quasi-totalement pratique.</p>
+                <a href="#formation" class="border-2 border-red-500 text-white bg-red-500 my-10 md:my-7 block w-40 lg:inline-block font-extrabold rounded px-4 py-2.5 mx-auto md:mx-0 lg:mx-0">En savoir plus..</a>
+            </div>
+            <div  class="w-max md:w-full h-auto hidden md:block lg:block">
+                <img src="./ressources/first_image.jpg" alt="image de code" width="1300px" class="">
+            </div>
+        </section>
+
+        <!-- Second section -->
+        <section class="lg:px-32 pt-20 lg:pt-28 relative w-full px-7" id="formation">
+            <h4 class="text-center md:text-xl lg:text-2xl text-gray-700 font-bold md:pb-10 pb-16">DEV vous apprend une nouvelle façon d'apprendre : <span class="text-red-500">10%</span> de théorie, <span class="text-red-500">20%</span> de collaboration, <span class="text-red-500">70%</span> de pratique.</h4>
+            <div class="lg:flex md:flex md:gap-4 lg:justify-between w-full pb-24 after:inline-block after:w-3/5 after:h-1 after:rounded after:bg-red-500 after:absolute after:bottom-0">
+                <div  class="lg:w-1/3 text-center">
+                    <img class="mb-4 mx-auto" src="./ressources/div_1.svg" alt="image">
+                    <h2 class="font-bold lg:text-2xl text-gray-800">Apprenez 
+                        <span class="lg:block">où que vous soyez</span>
+                    </h2>
+                    <p class="text-gray-600 font-light mt-2">Accédez à votre formation 100% en ligne au bureau, à la maison, en ville, à la montagne... Partout !</p>
+                </div>
+                <div  class="lg:w-1/3 text-center">
+                    <img class="my-4 md:mt-0 mx-auto" src="./ressources/div_2.svg" alt="image">
+                    <h2 class="font-bold lg:text-2xl text-gray-800">Un mentor 
+                        <span class="lg:block">pour vous accompagner</span>
+                    </h2>
+                    <p class="text-gray-600 font-light mt-2">Bénéficiez chaque semaine des conseils d'un expert du métier qui vous aide à progresser tout au long de votre formation.</p>
+                </div>
+                <div  class="lg:w-1/3 text-center">
+                    <img class="my-4 md:mt-0 mx-auto" src="./ressources/div_3.svg" alt="image">
+                    <h2 class="font-bold lg:text-2xl text-gray-800">Travaillez sur des projets 
+                        <span class="lg:block">professionnalisants</span>
+                    </h2>
+                    <p class="text-gray-600 font-light mt-2">Réalisez des projets concrets, issus de scénarios métiers, directement applicables en entreprise.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third section -->
+        <section class="lg:px-32 relative h-max pb-16 lg:pb-40 flex flex-col px-7" id="cursus">
+            <div class=" lg:relative lg:top-20">
+                <h2 class="lg:text-4xl text-2xl font-bold text-red-500 lg:text-red-400 my-4">Un cursus pré-établis précis et efficace...</h2>
+                <p class="text-gray-700 mb-5 lg:mb-0 lg:text-2xl lg:pb-7">Vous cherchez une formation complète pour apprendre de A à Z? Notre programme est établi sur une période de 6 mois, couvrant ainsi tous les domaines de la progammation web et mobile</p>
+            </div>
+
+            <div class="lg:flex h-max lg:relative lg:top-24 gap-4">
+
+                <div class="third_card"> 
+                    <h4 class="third_card_title">Frontend</h4>
+                    <ul>
+                        <li>
+                            <p class="third_paragraph">HTML/CSS (avec Framework)</p>
+                            <span>2 semaines</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">Apprendre le JavaScript basique/avancé</p>
+                            <span>5 semaines</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">ReactJS</p>
+                            <span>5 semaines</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">React Native</p>
+                            <span>6 semaines</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="third_card">
+                    <h4 class="third_card_title">Backend</h4>
+                    <ul>
+                        <li>
+                            <p class="third_paragraph">NodeJS/NestJS</p>
+                            <span>8 semaines</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">Base de données</p>
+                            <span>1 semaine</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">Architecture Rest API, service, GraphQl...</p>
+                            <span>2 semaines</span>
+                        </li>
+                        <li>
+                            <p class="third_paragraph">Design pattern</p>
+                            <span>1 semaine</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="third_card">
+                    <h4 class="third_card_title">Déploiment</h4>
+                    <ul>
+                        <li class="third_paragraph">Self-hosting</li>
+                        <li class="third_paragraph">Cloud hosting</li>
+                        <li class="third_paragraph">ServerLess</li>
+                        <li class="third_paragraph">Database as service</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fourth section -->
+        <section class="text-center bg-yellow-100 py-8 lg:py-12 px-7 lg:px-0">
+            <h4 class="lg:text-4xl md:text-2xl pb-3 lg:pb-7 text-red-500 font-bold">
+                Passez à l'action et profitez de nos bonus :
+            </h4>
+            <div class="lg:text-xl md:text-lg text-gray-700">
+                <p class="fourth_paragraph">Travailler à distance pour des entreprises occidentales</p>
+                <p class="fourth_paragraph">Comment se lancer à son propre compétences</p>
+                <p class="fourth_paragraph">Préparation à l'entretient d'embauche</p>
+            </div>
+            <button class="border-2 mt-8 border-red-400 text-white bg-red-400 font-extrabold rounded px-4 py-2.5">
+                <a href="./contact.html">Nous contacter</a>
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <p class="text-center mx-8 pt-7 pb-3 lg:py-4 text-xs lg:text-lg text-gray-400">
+            <span>DEV, centre de formation. Pour en savoir plus contactez nous/ Yaoundé, CAMEROUN. | <a class="text-red-500" href="#">Cliquez ici</a></span>
+            <span class="block">Copyright © 2023. All Rights Reserved.</span>
+        </p>
+    </footer>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav");
+        const main = document.querySelector(".main");
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('hidden');
+        })
+        main.addEventListener('click', ()=>{
+        navLinks.classList.add('hidden');
+        })
+    </script>
+</body>
+</html>

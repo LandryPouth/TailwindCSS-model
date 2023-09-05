@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/***** Index.html *****/
+/* Third section class */
+.third_card {
+    @apply border-2 rounded border-red-300 py-2.5 px-4 lg:w-1/3 lg:h-72 mt-2.5 lg:mt-0;
+}
+
+.third_card_title {
+    @apply text-2xl text-red-500 text-center font-bold w-fit after:block after:mx-auto after:h-0.5 after:w-full after:bg-red-400 after:mb-3;
+}
+
+.third_paragraph {
+    @apply font-bold text-gray-800 before:inline-block before:w-3 before:h-3 before:rounded-full before:mr-2.5 before:bg-red-500;
+} 
+
+
+/* Fourth section class*/
+.fourth_paragraph {
+    @apply before:inline-block before:w-3 before:h-3 before:rounded-full before:mr-2.5 before:bg-red-500;
+}
+
+
+
+/***** Contact.html *****/
+/* Inputs */
+.form_input {
+    @apply w-5/6 outline-0 border-b border-b-black;
+} 

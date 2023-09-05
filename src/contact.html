@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./CSS/output.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+        <div class="w-full h-16 bg-white relative lg:hidden  shadow-lg">
+            <img class="menu-hamburger absolute top-5 left-8" src="./ressources/menu.png" width="30px" height="30px" alt="menu burger">
+            <a class="shrink-0" href="#">
+                <img class="block lg:hidden absolute top-3 right-8" src="./ressources/logo_navbar.png" width="40px" height="40px" alt="Logo de la formation">
+            </a>
+        </div>
+        <nav class="hidden absolute nav w-1/2 lg:w-full h-screen lg:h-20 lg:flex lg:items-center lg:justify-between bg-white px-5 pt-8 lg:pt-0 lg:px-32 shadow-2xl lg:shadow-lg">
+            <div class="lg:w-1/4 lg:flex lg:justify-between">
+                <a class="shrink-0" href="#">
+                    <img class="hidden lg:block" src="./ressources/logo_navbar.png" width="60px" height="60px" alt="Logo de la formation">
+                </a>
+                <ul class="lg:flex lg:items-center text-gray-700 text-xl">
+                    <a href="index.html#formation" class="lg:hover:text-red-400 lg:transition-colors">
+                        <li class="mt-4 lg:mt-0">Formation</li>
+                    </a>
+                    <span class="lg:before:inline-block before:hidden before:w-0.5 before:h-10 before:bg-gray-400 before:mx-5"></span>
+                    <a href="index.html#cursus" class="lg:hover:text-red-400 lg:transition-colors">
+                        <li class="mt-4 lg:mt-0">
+                            Cursus
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <button class="lg:border-2 mt-8 lg:mt-0 lg:border-red-300 text-gray-700 lg:text-red-400 lg:hover:text-white lg:hover:bg-red-300 font-extrabold lg:rounded lg:px-4 lg:py-2.5 lg:transition-colors">
+                <a href="./index.html">Retourner à l'acceuil</a>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main part -->
+    <main class="main h-screen lg:pt-20 lg:flex lg:flex-row-reverse">
+        <div class="lg:w-3/5 px-7 lg:px-10 lg:overflow-y-scroll">
+            <h1 class="text-xl py-10 lg:text-2xl text-gray-800 font-bold">Faisons connaissance</h1>
+            <form class="w-full">
+                <div class="flex w-ful pb-7">
+                    <p>
+                        <label class="block" for="name">Nom*</label>
+                        <input id="name" class="form_input" type="text" placeholder="Nom" required>
+                    </p>
+                    <p>
+                        <label class="block" for="firstName">Prénom*</label>
+                        <input id="firstName" class="form_input" type="text" placeholder="Prénom" required>
+                    </p>
+                </div>
+                <div class="flex w-full pb-7">
+                    <p>
+                        <label class="block" for="email">Email</label>
+                        <input id="email" class="form_input" type="email" placeholder="Email">
+                    </p>
+                    <p>
+                        <label class="block" for="tel">Numéro de téléphone*</label>
+                        <input id="tel" class="form_input" type="number" placeholder="Numéro de téléphone" required>
+                    </p>
+                </div>
+                
+                <div class="w-full pb-7">
+                    <label class="block" for="goal">Votre objectif*</label>
+                    <select id="goal" name="goal" class="outline-0 border-b border-b-black bg-white text-gray-700 pt-3">
+                        <option value="">Développer mes connaissances</option>
+                        <option value="">Apprendre pour un but professionnel</option>
+                        <option value="">Activité parallèle</option>
+                    </select>
+                </div>
+    
+                <label for="check" class="block lg:w-3/5 text-gray-700"><input id="check" type="checkbox"> Je consens à être contacté(e) par un conseiller par téléphone et/ou SMS.</label>
+                <a href="#formation" class="border-2 border-red-500 text-white bg-red-500 my-7 block w-40 lg:inline-block font-extrabold rounded px-4 py-2.5 mx-auto lg:mx-0">Prendre contact</a>
+                <p class="text-xs text-gray-800">* Champs obligatoires</p>
+            </form>
+        </div>
+        <div class="lg:bg-gray-200 pb-20 lg:pb-0 h-max lg:h-full w-2/5">
+            <div class="w-96 bg-white shadow-2xl lg:shadow-xl relative ml-8 lg:mx-auto mt-10 rounded-lg p-7">
+                <h4 class="text-xl pb-7 lg:text-2xl font-bold text-red-500">Préparez vous pour les métiers de demain</h4>
+                <p class="text-xl pb-7 text-gray-80overflow-scroll0">
+                    “Le principe de l'évolution est beaucoup plus rapide en informatique que chez le bipède.”
+                </p>
+                <p class="text-right font-bold text-gray-700 italic">Jean Dion</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav");
+        const main = document.querySelector(".main");
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('hidden');
+        })
+        main.addEventListener('click', ()=>{
+        navLinks.classList.add('hidden');
+        })
+    </script>
+</body>
+</html>
